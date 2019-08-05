@@ -1,1 +1,37 @@
-<p>demo works!</p>
+<div class="container">
+
+    <div class="row">
+
+        <!-- <div class="col"></div> -->
+
+        <div class="col-6">
+
+            <form>
+
+                <div class="form-group">
+
+                    <label>CSS</label>
+                    <select class="form-control" name="" id="">
+                        <option *ngFor="let data of d1" value="">campo: {{data.css_file_name}}</option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>JS</label>
+                    <select class="form-control" name="" id="">
+                        <option *ngFor="let data of d2" value="">campo: {{data.js_file_name}}</option>
+                    </select>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- <div class="col"></div> -->
+
+</div>
