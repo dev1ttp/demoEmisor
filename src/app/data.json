@@ -1,0 +1,11 @@
+{
+    "data": [{
+            "css_file_name": "CSS1",
+            "css_file": "src/assets/css/styles1.css"
+        },
+        {
+            "css_file_name": "CSS2",
+            "css_file": "src/assets/css/styles2.css"
+        }
+    ]
+}

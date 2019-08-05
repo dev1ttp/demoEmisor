@@ -1,0 +1,11 @@
+{
+    "data": [{
+            "js_file_name": "Script1",
+            "js_file_dir": "src/assets/js/script1.js"
+        },
+        {
+            "js_file_name": "Script2",
+            "js_file_dir": "src/assets/js/script2.js"
+        }
+    ]
+}
