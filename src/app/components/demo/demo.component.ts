@@ -20,6 +20,7 @@ export class DemoComponent implements OnInit {
   ngOnInit() {
 
     this.getInfoFromDemo();
+    this.getInfoFromDemo2();
   }
 
 
@@ -32,7 +33,9 @@ export class DemoComponent implements OnInit {
 
   public async getInfoFromDemo2(){
 
-    
+    let response = await this._demo.getData2();
+    this.d2 = response['data'];
+    console.log(this.d2);
   }
 
 }

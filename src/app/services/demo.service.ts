@@ -1,22 +1,21 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DemoService {
 
-
-
   constructor(
-    private _http:HttpClient
+    private _http: HttpClient
   ) { }
 
 
   async getData(){
 
     try{
-      return await this._http.get("src/data.json").toPromise();
+      return await this._http.get("assets/data/data.json").toPromise();
     }
     catch (error) {
       let response = {
@@ -32,7 +31,7 @@ export class DemoService {
   async getData2(){
 
     try{
-      return await this._http.get("src/data2.json").toPromise();
+      return await this._http.get("assets/data/data2.json").toPromise();
     }
     catch (error) {
       let response = {
