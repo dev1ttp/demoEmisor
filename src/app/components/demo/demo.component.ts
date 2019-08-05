@@ -18,13 +18,16 @@ export class DemoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+
+    this.getInfoFromDemo();
   }
 
 
   public async getInfoFromDemo(){
 
     let response = await this._demo.getData();
-    
+    this.d1 = response['data'];
+    console.log(this.d1);
   }
 
   public async getInfoFromDemo2(){
