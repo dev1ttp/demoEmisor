@@ -1,9 +1,8 @@
-import { Component, OnInit, isDevMode } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Demo } from 'src/app/interfaces/demo';
 import { Demo2 } from 'src/app/interfaces/demo2';
 import { DemoService } from 'src/app/services/demo.service';
-import { DOCUMENT } from '@angular/common';
-
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-demo',
@@ -33,7 +32,7 @@ export class DemoComponent implements OnInit {
 
 
       //require("style-loader!./../../../assets/css/styles1.css");
-      //var asd = require("style-loader!./../../../assets/css/"+this.current)
+      var asd = require("style-loader!./../../../assets/css/"+this.current)
 
       //require("style-loader!./../../../"+this.current);
 
@@ -56,11 +55,20 @@ export class DemoComponent implements OnInit {
 
   public async updateStyle(fileName: string){
 
+/*     $(document).ready(function(){
+
+      $("link[href='styles1.css']").remove();
+
+    }); */
+
+    //document.styleSheets[document.styleSheets.length - 1].disabled = true;
     
     require("style-loader!./../../../assets/css/"+fileName);
+
+
     console.log(fileName);
 
-    //console.log(document.styleSheets)
+    console.log(document.styleSheets)
 
   }
 
