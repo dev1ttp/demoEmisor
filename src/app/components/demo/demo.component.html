@@ -11,8 +11,9 @@
                 <div class="form-group">
 
                     <label>CSS</label>
-                    <select class="form-control" name="" id="">
-                        <option *ngFor="let data of d1" value="">campo: {{data.css_file_name}}</option>
+                    <select class="form-control" #t (change)="updateStyle(t.value)">
+                        <option disabled selected>Seleccione</option>
+                        <option *ngFor="let data of d1" [value]="data.css_file">campo: {{data.css_file_name}}</option>
                     </select>
 
                 </div>
@@ -27,6 +28,8 @@
                 </div>
 
             </form>
+
+            <h1>Título</h1>
 
         </div>
 
