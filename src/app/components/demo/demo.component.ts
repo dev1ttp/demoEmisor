@@ -32,7 +32,11 @@ export class DemoComponent implements OnInit {
 
 
       //require("style-loader!./../../../assets/css/styles1.css");
-      var asd = require("style-loader!./../../../assets/css/"+this.current)
+      //var asd = require("style-loader!./../../../assets/css/"+this.current)
+
+      //console.log(document.styleSheets)
+
+
 
       //require("style-loader!./../../../"+this.current);
 
