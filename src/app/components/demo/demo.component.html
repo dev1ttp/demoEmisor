@@ -11,7 +11,7 @@
                 <div class="form-group">
 
                     <label>CSS</label>
-                    <select class="form-control" #t (change)="updateStyle(t.value)">
+                    <select class="form-control" #t (change)="loadStyle(t.value)">
                         <option disabled selected>Seleccione</option>
                         <option *ngFor="let data of d1" [value]="data.css_file">campo: {{data.css_file_name}}</option>
                     </select>
